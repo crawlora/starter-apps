@@ -32,3 +32,37 @@ in case if you want to update an existing app add `app_id` in `crawlora.json`
     "app_id": "3636e627-4e2c-4293-acb2-1c2e4d856b87"
 }
 ````
+
+
+image setup guidelines
+
+1. banner: 16:9 ( 1280px to 860px)
+2. logo: 1:1 ( 1000px to 1000px  )
+3. screenshots ( min 3 ) ( 1280px to 860px) each
+
+
+# steps after creating a new project
+
+1. update `crawlora.json`
+2. update `input.json` ( make sure you have enough and proper inputs )
+3. update `documentation.json`
+4. set the `CRAWLORA_AUTH_KEY` secret in the new github repo
+5. you will always have this environment variable when running so not need to set up in `crawlora.json`
+
+
+## Environment variables at the runtime
+
+```bash
+#Environment variables at the runtime
+
+CRAWLORA_SEQUENCE_ID # the running sequence
+CRAWLORA_AUTH_KEY # the user auth key
+
+```
+
+you can get this from node.js runtime like this
+
+```typescript
+process.env['CRAWLORA_SEQUENCE_ID'] // 3636e627-4e2c-4293-acb2-1c2e4d856b87
+process.env['CRAWLORA_AUTH_KEY'] //3636e627-4e2c-4293-acb2-1c2e4d856b873636e627-4e2c-4293-acb2-1c2e4d856b873636e627-4e2c-4293-acb2-1c2e4d856b873636e627-4e2c-4293-acb2-1c2e4d856b873636e627-4e2c-4293-acb2-1c2e4d856b87
+```
