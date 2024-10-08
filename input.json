@@ -3,9 +3,9 @@
         "type": "textarea",
         "datatype": "string",
         "placeholder": "Enter search keywords per line",
-        "default": "",
+        "default": "crawlora",
         "label": "Google searchs",
-        "regex": "",
+        "regex": "/^.*$/",
         "required": true,
         "name": "searches"
       }
