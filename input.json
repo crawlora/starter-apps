@@ -1,17 +1,12 @@
 [
     {
-        "type": "textarea",
-        "default_value": "",
-        "placeholder": "crawlora",
-        "name": "searches",
-        "required": true
-    },
-    {
         "type": "input",
-        "default_value": "",
-        "placeholder": "crawlora",
-        "name": "profile_link",
-        "regex": "",
-        "required": true
-    }
+        "datatype": "string",
+        "placeholder": "string",
+        "default": "string",
+        "label": "string",
+        "regex": "string",
+        "required": true,
+        "name": "string"
+      }
 ]
