@@ -1,6 +1,6 @@
 import { apikey, sequence_id, showBrowser } from "./config";
 
-import { browser } from "crawlora";
+import { browser } from "@crawlora/browser";
 
 export default async function ({
   searches, // data coming from textarea which means it is multiline

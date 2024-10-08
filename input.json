@@ -1,12 +1,12 @@
 [
     {
-        "type": "input",
+        "type": "textarea",
         "datatype": "string",
-        "placeholder": "string",
-        "default": "string",
-        "label": "string",
-        "regex": "string",
+        "placeholder": "Enter search keywords per line",
+        "default": "",
+        "label": "Google searchs",
+        "regex": "",
         "required": true,
-        "name": "string"
+        "name": "searches"
       }
 ]
