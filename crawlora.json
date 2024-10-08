@@ -11,5 +11,6 @@
     "short_description": "Get google links quickly",
     "version":"1.0.0",
     "documentation_file": "./documentation.md",
-    "input_file": "./input.json"
+    "input_file": "./input.json",
+    "app_id": "af9f9daf-cdf9-4772-874d-01a80eb0d84f"
 }
