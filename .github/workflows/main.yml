@@ -6,8 +6,11 @@ on:
     branches:
       - main
 
+env:
+  auth_key: ${{ secrets.CRAWLORA_AUTH_KEY }}
+
 jobs:
   publish:
     uses: crawlora-com/starter-apps/.github/workflows/publish.yaml@main
     with:
-      auth_key: ${{ secrets.CRAWLORA_AUTH_KEY }}
+      auth_key: ${{ env.CRAWLORA_AUTH_KEY }}
