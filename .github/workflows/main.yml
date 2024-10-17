@@ -1,0 +1,13 @@
+name: Main Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    uses: crawlora-com/starter-apps/.github/workflows/publish.yml@main
+    with:
+      auth_key: ${{ secrets.CRAWLORA_AUTH_KEY }}
