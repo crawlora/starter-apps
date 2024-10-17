@@ -10,4 +10,4 @@ jobs:
   publish:
     uses: crawlora-com/starter-apps/.github/workflows/publish.yaml@main
     secrets:
-      auth_key: ${{ env.CRAWLORA_AUTH_KEY }}
+      auth_key: ${{ secrets.CRAWLORA_AUTH_KEY }}
