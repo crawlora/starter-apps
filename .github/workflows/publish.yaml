@@ -42,4 +42,4 @@ jobs:
         uses: crawlora-com/crawlora-app-publish-action@main
         with:
           working-directory: .
-          auth_key: ${{ inputs.auth_key }}
+          auth_key: ${{ secrets.auth_key }}
