@@ -2,12 +2,9 @@ name: Crawlora-App-Publish
 
 on:
   workflow_call:
-    inputs:
-      auth_key:
-        required: true
-        type: string
+    # inputs:
     secrets:
-      CRAWLORA_AUTH_KEY:
+      auth_key:
         required: true
 
 jobs:
