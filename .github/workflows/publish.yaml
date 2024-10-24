@@ -39,7 +39,7 @@ jobs:
         run: npm run build
       
       - name: Crawlora App Publish
-        uses: crawlora-com/crawlora-app-publish-action@main
+        uses: crawlora/crawlora-app-publish-action@main
         with:
           working-directory: .
           auth_key: ${{ secrets.auth_key }}
